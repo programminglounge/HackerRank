@@ -7,7 +7,7 @@ Given a large chunck of test, identify the most frequently occuring trigram in i
 Assume that trigrams are groups of three consecutive words in the same sentence which are separated by nothing but a single space and are case insensitive. The size of the input will be less than 10 kilobytes.
 
 Input: I love games. I love to code.<br>
-Here "games I love" is not a trigram because all the same sentence
+Here "games I love" is not a trigram because all the three words in trigram should be from the same sentence.<br>
 
 <b>Input Format</b><br>
 A large chunck of text.<br>
@@ -32,6 +32,7 @@ i love to<br>
 
 <b>Explanation 1</b><br>
 Here, Trigram "I love to" has occured 1 time, "I like to" has also occured 1 time. But since "I love to" occured first, it will be the answer.<br>
+
 --------------------------------------------
 String Function Calculation
 
