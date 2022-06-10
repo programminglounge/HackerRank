@@ -2,7 +2,7 @@
 In this repository I solve some of the problems on the platform Hackerrank using Python, C#, C++
 
 --------------------------------------------
-Given a large chunck of test, identify the most frequently occuring trigram in it. If there are multiple trigrams with the same frequency, then print the one which occured fist.
+Given a large chunck of text, identify the most frequently occuring trigram in it. If there are multiple trigrams with the same frequency, then print the one which occured fist.
 
 Assume that trigrams are groups of three consecutive words in the same sentence which are separated by nothing but a single space and are case insensitive. The size of the input will be less than 10 kilobytes.
 
