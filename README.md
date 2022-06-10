@@ -2,6 +2,37 @@
 In this repository I solve some of the problems on the platform Hackerrank using Python, C#, C++
 
 --------------------------------------------
+Given a large chunck of test, identify the most frequently occuring trigram in it. If there are multiple trigrams with the same frequency, then print the one which occured fist.
+
+Assume that trigrams are groups of three consecutive words in the same sentence which are separated by nothing but a single space and are case insensitive. The size of the input will be less than 10 kilobytes.
+
+Input: I love games. I love to code.<br>
+Here "games I love" is not a trigram because all the same sentence
+
+<b>Input Format</b><br>
+A large chunck of text.<br>
+
+<b>Constraints</b><br>
+The input contains lowe or uppercase alphabets, whitespaces and dots<br>
+
+<b>Output Format</b><br>
+The most popular trigram - three words, with nothing bt a space in between them. The output should be in lowercase. (If a trigram dens with dot, then you should remove the dot.)<br>
+
+<b>Sample Input 0</b><br>
+I came from the moon. He went to the other room. She went to the drawing room.<br>
+
+<b>Sample Output 0</b><br>
+went to the<br>
+
+<b>Sample Input 1</b><br>
+I love to dance. I like to dance I. like to play chess.<br>
+
+<b>Sample Output 1</b><br>
+i love to<br>
+
+<b>Explanation 1</b><br>
+Here, Trigram "I love to" has occured 1 time, "I like to" has also occured 1 time. But since "I love to" occured first, it will be the answer.<br>
+--------------------------------------------
 String Function Calculation
 
 Jane loves strings more than anything. She has a string t with her, and value of string s over function f can be calculated given below
