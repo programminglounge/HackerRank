@@ -81,7 +81,7 @@ int main()
       while(pos_third_space != -1)
       {
         sub2 = sub.substr(0, pos_third_space);
-        if (my_map.szie() == 0)
+        if (my_map.size() == 0)
         {
           my_map.push_back(std::make_pair(sub2, 1));
           newstart = find_first_space(sub);
