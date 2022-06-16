@@ -2,6 +2,40 @@
 In this repository I solve some of the problems on the platform Hackerrank using Python, C#, C++
 
 --------------------------------------------
+
+You are given a function <b>f(X) = X<sup>2</sup></b>. You are also given <b>K</b> lists. The <b>i<sup>th</sup></b> list consists of <b>N<sub>i</sub></b> elements.<br>
+You have to pick one element from each list so that the value from the equation below is maximized:<br>
+  <b>S = (f(X<sub>1</sub>)+f(X<sub>2</sub>)+...+f(X<sub>k</sub>))%M</b><br>
+ <b>X<sub>i</sub></b> denotes the element picked from the <b>i<sup>th</sup></b> list. Find the maximized value <b>S<sub>max</sub></b> obtained.<br><br>
+ 
+ Note that you need to take exactly one element from each list, not necessarily the largest element. You add the squares of the chosen elements and perform the modulo operation. The maximum value that you can obtain, will be the answer to the problem.<br>
+ 
+<b>Input Format</b><br>
+The first line contains 2 space separated integers <b>K</b> and <b>M</b>.
+The next <b>K</b> lines each contains an integer <b>N<sub>i</sub></b> denoting the number of elements in the <b>i<sup>th</sup></b> list, followed by <b>N<sub>i</sub></b> space separated integers dentioned the elements in the list.
+
+<b>Constraints</b> <br>
+1 <= K <= 7 <br>
+1 <= M <= 1000 <br>
+1<= N<sub>i</sub> <= 7 <br>
+1 <= Magnitude of elements in list <= 10<sup>9</sup> <br>
+
+<b>Output Format</b> <br>
+Output a single integer denoting the value <b>S<sup>max</sup></b> <br>
+
+<b>Sample Input</b> <br>
+3  1000 <br>
+2  5  4 <br>
+3  7  8  9 <br>
+5  5  7  8  9  10 <br>
+
+<b>Sample Output</b><br>
+206<br>
+
+<b>Explanation</b><br>
+picking 5 from the 1st list, 9 from the 2nd list and 10 from the 3rd list gives the maximum S value equal to (5<sup>2</sup> + 9<sup>2</sup> + 10<sup>2</sup> ) % 1000 = 206.
+
+-------------------------------------------------------------------------------
 Given a large chunck of text, identify the most frequently occuring trigram in it. If there are multiple trigrams with the same frequency, then print the one which occured fist.
 
 Assume that trigrams are groups of three consecutive words in the same sentence which are separated by nothing but a single space and are case insensitive. The size of the input will be less than 10 kilobytes.
